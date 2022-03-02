@@ -819,6 +819,13 @@ html.no-touch nav ul li:hover {
   z-index: 30;
 }
 
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  #the-book {
+    margin-left: -290px;
+  }
+}
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min-device-pixel-ratio: 2) {
   .moment p.scroll-hint {
