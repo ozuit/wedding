@@ -565,14 +565,14 @@ html.no-touch nav ul li:hover {
 }
 
 #the-book {
-  width: 147px;
-  height: 169px;
+  width: 256px;
+  height: 256px;
   background: url("../img/book.png") no-repeat;
   position: absolute;
   left: 50%;
-  bottom: 250px;
-  margin-left: -500px;
-  transform: rotate(-25deg);
+  bottom: 215px;
+  margin-left: -558px;
+  transform: scale(0.6) rotate(-25deg);
 }
 
 #party {
@@ -822,7 +822,7 @@ html.no-touch nav ul li:hover {
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   #the-book {
-    margin-left: -290px;
+    margin-left: -305px;
   }
 }
 
