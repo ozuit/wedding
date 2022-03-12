@@ -748,8 +748,8 @@ html.no-touch nav ul li:hover {
 
 #music-sign {
   position: fixed;
-  top: 10px;
-  left: 10px;
+  top: 20px;
+  left: 20px;
   width: 50px;
   cursor: pointer;
 }
