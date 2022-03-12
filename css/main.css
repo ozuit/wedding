@@ -746,6 +746,14 @@ html.no-touch nav ul li:hover {
   background-position: 0px -365px;
 }
 
+#music-sign {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 50px;
+  cursor: pointer;
+}
+
 .cloud-bird {
   width: 48px;
   height: 32px;
