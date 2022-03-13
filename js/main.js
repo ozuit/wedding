@@ -148,13 +148,14 @@ $(document).ready(function () {
   audio.autoplay = true;
 
   $("#music-sign").on("click", function () {
-    var src = $(this).attr("src")
+    var img = $(this).children("img")
+    var src = img.attr("src")
     if (src.includes("on")) {
       audio.pause();
-      $(this).attr("src", "img/music-off.png");
+      img.attr("src", "img/music-off.png");
     } else {
       audio.play();
-      $(this).attr("src", "img/music-on.png");
+      img.attr("src", "img/music-on.png");
     }
   })
 
