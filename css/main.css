@@ -423,6 +423,10 @@ footer p a:hover {
   z-index: 100;
 }
 
+#click-album {
+  left: 130px
+}
+
 header {
   top: 110px;
   position: relative;
@@ -1069,6 +1073,9 @@ html.no-touch nav ul li:hover {
   }
   nav {
     display: none;
+  }
+  #click-album {
+    left: 170px
   }
 }
 
