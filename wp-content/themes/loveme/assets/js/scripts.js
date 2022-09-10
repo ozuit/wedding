@@ -1,6 +1,6 @@
-(function($) {
+(function ($) {
 
-	"use strict";
+    "use strict";
 
 
     /*------------------------------------------
@@ -14,7 +14,7 @@
         var openBtn = $(".mobail-menu .open-btn");
         var xbutton = $(".mobail-menu .navbar-toggler");
 
-        openBtn.on("click", function(e) {
+        openBtn.on("click", function (e) {
             e.stopImmediatePropagation();
             navbar.toggleClass("slideInn");
             xbutton.toggleClass("x-close");
@@ -52,7 +52,7 @@
         if (windowWidth <= 991) {
             subMenu.hide();
             megamenu.hide();
-            menuItemWidthSubMenu.on("click", function(e) {
+            menuItemWidthSubMenu.on("click", function (e) {
                 var $this = $(this);
                 $this.siblings().slideToggle();
                 e.preventDefault();
@@ -67,21 +67,21 @@
 
     smallNavFunctionality();
 
-    $("body").on("click", function() {
+    $("body").on("click", function () {
         $('.navigation-holder').removeClass('slideInn');
     });
-    $(".menu-close").on("click", function() {
+    $(".menu-close").on("click", function () {
         $('.navigation-holder').removeClass('slideInn');
     });
-    $(".menu-close").on("click", function() {
+    $(".menu-close").on("click", function () {
         $('.open-btn').removeClass('x-close');
     });
 
 
     // DATA BACKGROUND IMAGE
     var sliderBgSetting = $(".slide-bg-image");
-    sliderBgSetting.each(function(indx){
-        if ($(this).attr("data-background")){
+    sliderBgSetting.each(function (indx) {
+        if ($(this).attr("data-background")) {
             $(this).css("background-image", "url(" + $(this).data("background") + ")");
         }
     });
@@ -92,8 +92,8 @@
         = HIDE PRELOADER
     -------------------------------------------*/
     function preloader() {
-        if($('.preloader').length) {
-            $('.preloader').delay(100).fadeOut(500, function() {
+        if ($('.preloader').length) {
+            $('.preloader').delay(100).fadeOut(500, function () {
 
                 //active wow
                 wow.init();
@@ -107,26 +107,26 @@
         = WOW ANIMATION SETTING
     -------------------------------------------*/
     var wow = new WOW({
-        boxClass:     'wow',      // default
+        boxClass: 'wow',      // default
         animateClass: 'animated', // default
-        offset:       0,          // default
-        mobile:       true,       // default
-        live:         true        // default
+        offset: 0,          // default
+        mobile: true,       // default
+        live: true        // default
     });
 
 
     /*------------------------------------------
         = ACTIVE POPUP IMAGE
     -------------------------------------------*/
-    if($(".woocommerce-product-gallery__wrapper").length)  {
-        $(".woocommerce-product-gallery__wrapper").find( "> div > a").addClass("fancybox");
-        $(".woocommerce-product-gallery__wrapper").find( "> div > a").attr('data-fancybox-group', 'gall-1');
+    if ($(".woocommerce-product-gallery__wrapper").length) {
+        $(".woocommerce-product-gallery__wrapper").find("> div > a").addClass("fancybox");
+        $(".woocommerce-product-gallery__wrapper").find("> div > a").attr('data-fancybox-group', 'gall-1');
     }
-        if ($(".fancybox").length) {
+    if ($(".fancybox").length) {
         $(".fancybox").fancybox({
-            openEffect  : "elastic",
-            closeEffect : "elastic",
-            wrapCSS     : "project-fancybox-title-style"
+            openEffect: "elastic",
+            closeEffect: "elastic",
+            wrapCSS: "project-fancybox-title-style"
         });
     }
 
@@ -135,17 +135,17 @@
         = POPUP VIDEO
     -------------------------------------------*/
     if ($(".video-btn").length) {
-        $(".video-btn").on("click", function(){
+        $(".video-btn").on("click", function () {
             $.fancybox({
                 href: this.href,
                 type: $(this).data("type"),
-                'title'         : this.title,
-                helpers     : {
-                    title : { type : 'inside' },
-                    media : {}
+                'title': this.title,
+                helpers: {
+                    title: { type: 'inside' },
+                    media: {}
                 },
 
-                beforeShow : function(){
+                beforeShow: function () {
                     $(".fancybox-wrap").addClass("gallery-fancybox");
                 }
             });
@@ -153,7 +153,7 @@
         });
     }
 
-  
+
     /*------------------------------------------
         = ACTIVE GALLERY POPUP IMAGE
     -------------------------------------------*/
@@ -163,7 +163,7 @@
             type: 'image',
 
             gallery: {
-              enabled: true
+                enabled: true
             },
 
             zoom: {
@@ -171,7 +171,7 @@
 
                 duration: 300,
                 easing: 'ease-in-out',
-                opener: function(openerElement) {
+                opener: function (openerElement) {
                     return openerElement.is('img') ? openerElement : openerElement.find('img');
                 }
             }
@@ -197,7 +197,7 @@
         if ($(".sortable-gallery .gallery-filters").length) {
             var $container = $('.gallery-container');
             $container.isotope({
-                filter:'*',
+                filter: '*',
                 animationOptions: {
                     duration: 750,
                     easing: 'linear',
@@ -205,12 +205,12 @@
                 }
             });
 
-            $(".gallery-filters li a").on("click", function() {
+            $(".gallery-filters li a").on("click", function () {
                 $('.gallery-filters li .current').removeClass('current');
                 $(this).addClass('current');
                 var selector = $(this).attr('data-filter');
                 $container.isotope({
-                    filter:selector,
+                    filter: selector,
                     animationOptions: {
                         duration: 750,
                         easing: 'linear',
@@ -266,24 +266,24 @@
 
 
 
-/*------------------------------------------
-        = Header search toggle
-    -------------------------------------------*/
-    if($(".header-search-form-wrapper").length) {
+    /*------------------------------------------
+            = Header search toggle
+        -------------------------------------------*/
+    if ($(".header-search-form-wrapper").length) {
         var searchToggleBtn = $(".search-toggle-btn");
         var searchToggleBtnIcon = $(".search-toggle-btn i");
         var searchContent = $(".header-search-form");
         var body = $("body");
 
-        searchToggleBtn.on("click", function(e) {
+        searchToggleBtn.on("click", function (e) {
             searchContent.toggleClass("header-search-content-toggle");
             searchToggleBtnIcon.toggleClass("fi flaticon-search ti-close");
             e.stopPropagation();
         });
 
-        body.on("click", function() {
+        body.on("click", function () {
             searchContent.removeClass("header-search-content-toggle");
-        }).find(searchContent).on("click", function(e) {
+        }).find(searchContent).on("click", function (e) {
             e.stopPropagation();
         });
     }
@@ -292,9 +292,9 @@
         = Header shopping cart toggle
     -------------------------------------------*/
 
-    $('.cart-toggle-btn').on('click', function(event) {
+    $('.cart-toggle-btn').on('click', function (event) {
         event.preventDefault();
-         if($(".mini-cart").length) {
+        if ($(".mini-cart").length) {
             var cartToggleBtn = $(".cart-toggle-btn");
             var cartContent = $(".mini-cart-content");
             var cartCloseBtn = $(".mini-cart-close");
@@ -303,19 +303,19 @@
             cartContent.toggleClass("mini-cart-content-toggle");
             event.stopPropagation();
 
-            body.on("click", function() {
+            body.on("click", function () {
                 cartContent.removeClass("mini-cart-content-toggle");
-            }).find(cartContent).on("click", function(e) {
+            }).find(cartContent).on("click", function (e) {
                 e.stopPropagation();
             });
 
-            cartCloseBtn.on("click", function(e) {
-              cartContent.removeClass("mini-cart-content-toggle");
-                 e.stopPropagation();
+            cartCloseBtn.on("click", function (e) {
+                cartContent.removeClass("mini-cart-content-toggle");
+                e.stopPropagation();
             });
 
 
-         }
+        }
     });
 
 
@@ -328,11 +328,11 @@
             autoplay: true,
             smartSpeed: 300,
             margin: 0,
-            loop:true,
-            autoplayHoverPause:true,
+            loop: true,
+            autoplayHoverPause: true,
             dots: false,
             nav: false,
-            items:4
+            items: 4
         });
     }
 
@@ -340,20 +340,20 @@
     /*------------------------------------------
         = POST SLIDER
     -------------------------------------------*/
-    if($(".post-slider".length)) {
+    if ($(".post-slider".length)) {
         $(".post-slider").owlCarousel({
             mouseDrag: false,
             smartSpeed: 500,
             margin: 30,
-            loop:true,
+            loop: true,
             nav: true,
-            navText: ['<i class="fi ti-arrow-left"></i>','<i class="fi ti-arrow-right"></i>'],
+            navText: ['<i class="fi ti-arrow-left"></i>', '<i class="fi ti-arrow-right"></i>'],
             dots: false,
             items: 1
         });
-    }  
-	
-	
+    }
+
+
     /*------------------------------------------
         = FUNCTION FORM SORTING GALLERY
     -------------------------------------------*/
@@ -361,7 +361,7 @@
         if ($(".sortable-gallery .gallery-filters").length) {
             var $container = $('.gallery-container');
             $container.isotope({
-                filter:'*',
+                filter: '*',
                 animationOptions: {
                     duration: 750,
                     easing: 'linear',
@@ -369,12 +369,12 @@
                 }
             });
 
-            $(".gallery-filters li a").on("click", function() {
+            $(".gallery-filters li a").on("click", function () {
                 $('.gallery-filters li .current').removeClass('current');
                 $(this).addClass('current');
                 var selector = $(this).attr('data-filter');
                 $container.isotope({
-                    filter:selector,
+                    filter: selector,
                     animationOptions: {
                         duration: 750,
                         easing: 'linear',
@@ -388,9 +388,9 @@
 
     sortingGallery();
 
-     /*------------------------------------------
-        = BACK TO TOP BTN SETTING
-    -------------------------------------------*/
+    /*------------------------------------------
+       = BACK TO TOP BTN SETTING
+   -------------------------------------------*/
     $("body").append("<a href='#' class='back-to-top'><i class='ti-arrow-up'></i></a>");
 
     function toggleBackToTopBtn() {
@@ -402,7 +402,7 @@
         }
     }
 
-    $(".back-to-top").on("click", function() {
+    $(".back-to-top").on("click", function () {
         $("html,body").animate({
             scrollTop: 0
         }, 700);
@@ -414,27 +414,27 @@
     /*=========================================================================
         WHEN DOCUMENT LOADING
     ==========================================================================*/
-        $(window).on('load', function() {
+    $(window).on('load', function () {
 
-            preloader();  
+        preloader();
 
-            toggleMobileNavigation();
+        toggleMobileNavigation();
 
-            smallNavFunctionality();
+        smallNavFunctionality();
 
-            sortingGallery();
-            
-        });
+        sortingGallery();
+
+    });
 
 
 
     /*==========================================================================
         WHEN WINDOW SCROLL
     ==========================================================================*/
-    $(window).on("scroll", function() {
+    $(window).on("scroll", function () {
 
-		if ($(".wpo-site-header").length) {
-           stickyMenu( $('.wpo-site-header .navigation'), "sticky-on" );
+        if ($(".wpo-site-header").length) {
+            stickyMenu($('.wpo-site-header .navigation'), "sticky-on");
         }
 
         toggleBackToTopBtn();
@@ -445,20 +445,20 @@
     /*==========================================================================
         WHEN WINDOW RESIZE
     ==========================================================================*/
-    $(window).on("resize", function() {
+    $(window).on("resize", function () {
         toggleClassForSmallNav();
         //smallNavFunctionality();
 
         clearTimeout($.data(this, 'resizeTimer'));
-        $.data(this, 'resizeTimer', setTimeout(function() {
+        $.data(this, 'resizeTimer', setTimeout(function () {
             smallNavFunctionality();
         }, 200));
     });
 
 
-    $(document).ready(function(){
-      $('div.quantity.buttons_added .plus, td.quantity.buttons_added .plus').attr("value", $.parseHTML("&#xe113;")[0].data);
-      $('div.quantity.buttons_added .minus, td.quantity.buttons_added .minus').attr("value", $.parseHTML("&#xe114;")[0].data);
+    $(document).ready(function () {
+        $('div.quantity.buttons_added .plus, td.quantity.buttons_added .plus').attr("value", $.parseHTML("&#xe113;")[0].data);
+        $('div.quantity.buttons_added .minus, td.quantity.buttons_added .minus').attr("value", $.parseHTML("&#xe114;")[0].data);
     });
 
     $('.woocommerce .thumbnails .owl-nav .owl-prev i').addClass('ti-arrow-left');
@@ -470,7 +470,7 @@
     $('.blog-sidebar .wp-block-search .wp-block-search__label').text('');
     $('.blog-sidebar .wp-block-search .wp-block-search__label').append('<h2>Search</h2>');
 
-    $(".wpo-blog-pg-section .entry-meta ul li a, .wpo-blog-single-section .entry-meta ul li a").text(function(i, $string) {
+    $(".wpo-blog-pg-section .entry-meta ul li a, .wpo-blog-single-section .entry-meta ul li a").text(function (i, $string) {
         return $string.replace(/,/g, ", ");
     });
 
