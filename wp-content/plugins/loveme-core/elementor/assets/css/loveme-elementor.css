@@ -1,0 +1,41 @@
+/*
+Template Name: Loveme Core
+Author: wpoceans
+Version: 1.0
+Email: support@wpoceans.com
+*/
+
+.elementor-widget-tabs.elementor-tabs-view-horizontal .elementor-tab-content {
+    background: rgba(135, 210, 113, 0.1);
+    padding: 35px 40px;
+    border: none;
+}
+
+.elementor-widget-tabs.elementor-tabs-view-horizontal .elementor-tab-desktop-title {
+    padding: 0px;
+}
+
+.elementor-widget-tabs.elementor-tabs-view-horizontal .elementor-tab-desktop-title.elementor-active a {
+    background: #87d271;
+    color: #fff;
+    text-transform: uppercase;
+    margin-right: 3px;
+}
+
+.elementor-widget-tabs.elementor-tabs-view-horizontal .elementor-tab-desktop-title a:hover {
+    background: #87d271;
+    color: #fff;
+}
+
+.elementor-widget-tabs.elementor-tabs-view-horizontal .elementor-tab-desktop-title a {
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2b2e3a;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    border: 1px solid rgba(135, 210, 113, 0.5);
+    display: block;
+    margin-right: 3px;
+}
+
