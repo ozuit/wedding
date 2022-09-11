@@ -4776,14 +4776,14 @@ img {
 @media (max-width: 767px) {
     .wpo-hero-style-3 .wedding-announcement .couple-text h2 {
         font-size: 50px;
-        margin-top: -180px;
+        margin-top: -200px;
     }
 }
 
 @media (max-width: 575px) {
     .wpo-hero-style-3 .wedding-announcement .couple-text h2 {
         font-size: 40px;
-        margin-top: -180px;
+        margin-top: -200px;
     }
 }
 
@@ -4798,6 +4798,8 @@ img {
 @media (max-width: 767px) {
     .wpo-hero-style-3 .wedding-announcement .couple-text p {
         font-size: 18px;
+        padding: 0 15px;
+        line-height: 1.5em;
     }
 }
 
@@ -6546,6 +6548,7 @@ div#elementor-lightbox-slideshow-single-img {
   margin-bottom: 30px;
   margin-top: -20px;
   position: relative;
+  padding: 0 35px;
 }
 @media (max-width: 767px) {
   .wpo-cta-section .wpo-cta-item p {
