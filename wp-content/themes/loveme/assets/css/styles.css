@@ -4783,7 +4783,7 @@ img {
 @media (max-width: 575px) {
     .wpo-hero-style-3 .wedding-announcement .couple-text h2 {
         font-size: 40px;
-        margin-top: -100px;
+        margin-top: -180px;
     }
 }
 
@@ -4816,6 +4816,7 @@ img {
         display: flex;
         /* flex-wrap: wrap; */
         justify-content: center;
+        margin-left: -3px;
     }
 }
 
