@@ -24,7 +24,7 @@ Version: 1.0
                 speed: 1000,
                 parallax: true,
                 autoplay: {
-                    delay: 6500,
+                    delay: 2000,
                     disableOnInteraction: false,
                 },
 

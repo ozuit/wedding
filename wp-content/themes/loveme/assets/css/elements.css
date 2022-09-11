@@ -4512,12 +4512,12 @@ span.comments-date {
 }
 
 .navbar-header .site-logo .navbar-brand img {
-    max-width: 177px;
+    max-width: 80px;
 }
 
 @media (max-width: 575px) {
     .navbar-header .site-logo .navbar-brand img {
-        max-width: 150px;
+        max-width: 60px;
     }
 }
 
