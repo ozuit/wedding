@@ -475,4 +475,14 @@
     });
 
 
+    $("nav li").click(function (e) {
+        var $moment = $($(this).find('a').attr('href'));
+        console.log($(this).find('a').attr('href'))
+        $('html, body').animate({
+            scrollTop: $moment.offset().top
+        }, 1000);
+
+        e.preventDefault();
+        return false;
+    })
 })(window.jQuery);
