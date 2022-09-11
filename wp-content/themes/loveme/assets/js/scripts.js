@@ -485,4 +485,22 @@
         e.preventDefault();
         return false;
     })
+
+    var source = "asset/audio/music.mp3";
+    var audio = new Audio();
+    audio.src = source;
+    audio.autoplay = true;
+    audio.loop = true;
+
+    $("#music-sign").on("click", function () {
+        var img = $(this).children("img")
+        var src = img.attr("src")
+        if (src.includes("on")) {
+            audio.pause();
+            img.attr("src", "asset/images/music-off.svg");
+        } else {
+            audio.play();
+            img.attr("src", "asset/images/music-on.svg");
+        }
+    })
 })(window.jQuery);

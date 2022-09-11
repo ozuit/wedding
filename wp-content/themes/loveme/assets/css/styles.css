@@ -12718,3 +12718,66 @@ div#elementor-lightbox-slideshow-single-img {
         font-size: 80px;
     }
 }
+
+#music-sign {
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    background-color: #a5b9c9;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#music-sign::after {
+    content: "";
+    position: absolute;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: rgba(165, 185, 201, 0.3);
+    width: 120%;
+    height: 120%;
+    left: -10%;
+    top: -10%;
+    -webkit-animation: biilogo-pulse 1s infinite;
+    animation: biilogo-pulse 1s infinite;
+    z-index: 1;
+}
+
+@-webkit-keyframes biilogo-pulse {
+    from {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(0.95, 0.95, 0.95);
+      transform: scale3d(0.95, 0.95, 0.95);
+    }
+    to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+}
+  
+@keyframes biilogo-pulse {
+    from {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(0.95, 0.95, 0.95);
+      transform: scale3d(0.95, 0.95, 0.95);
+    }
+    to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+}
