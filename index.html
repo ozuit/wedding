@@ -2010,6 +2010,22 @@
           data-element_type="section"
           id="video"
         >
+        <div
+            class="elementor-element elementor-element-7222952 elementor-widget elementor-widget-wpo-loveme_title"
+            data-id="7222952"
+            data-element_type="widget"
+            data-settings='{"shape_image":{"url":"http:\/\/wpocean.com\/wp\/loveme\/wp-content\/uploads\/2021\/10\/section-title2.png","id":715,"alt":"","source":"library"}}'
+            data-widget_type="wpo-loveme_title.default"
+          >
+            <div class="elementor-widget-container">
+              <div class="wpo-section-title-s2">
+                <h2>Our Journey Begins</h2>
+                <div class="section-title-img">
+                  <div class="round-ball"></div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="elementor-container elementor-column-gap-no">
             <div
               class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b72da25"
@@ -2054,6 +2070,7 @@
             data-element_type="widget"
             data-settings='{"shape_image":{"url":"http:\/\/wpocean.com\/wp\/loveme\/wp-content\/uploads\/2021\/10\/section-title2.png","id":715,"alt":"","source":"library"}}'
             data-widget_type="wpo-loveme_title.default"
+            style="margin-top: 100px;"
           >
             <div class="elementor-widget-container">
               <div class="wpo-section-title-s2">
@@ -2063,7 +2080,7 @@
                 </div>
               </div>
             </div>
-            <iframe src="https://www.ozuit.blog/album/" height="500px" title="album wedding Tan & Truc"></iframe>
+            <iframe src="https://www.ozuit.blog/album/" id="album" title="album wedding Tan & Truc"></iframe>
           </div>
         </section>
         <section
@@ -2389,6 +2406,7 @@
       id="jquery-ui-core-js"
     ></script>
     <script type="text/javascript" id="elementor-frontend-js-before">
+      document.getElementById('album').height = window.innerHeight - 100
       var elementorFrontendConfig = {
         environmentMode: {
           edit: false,
