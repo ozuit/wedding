@@ -5403,7 +5403,7 @@ static-hero-s4
 
 .wpo-site-footer .link-widget ul li a {
     color: #575757;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .wpo-site-footer .link-widget ul li a:hover {
@@ -12736,11 +12736,12 @@ div#elementor-lightbox-slideshow-single-img {
     width: 60px;
     height: 60px;
     cursor: pointer;
-    background-color: #a5b9c9;
+    background-color: rgba(134, 160, 182, 0.7);
     border-radius: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 999;
 }
 
 #music-sign::after {
