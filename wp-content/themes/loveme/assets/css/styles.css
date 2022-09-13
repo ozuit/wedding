@@ -5315,8 +5315,8 @@ static-hero-s4
 
 @media (max-width: 1500px) {
     .wpo-site-footer .about-widget {
-        padding-right: 15px;
-        padding-left: 15px;
+        padding-right: 0px;
+        padding-left: 0px;
     }
 }
 
