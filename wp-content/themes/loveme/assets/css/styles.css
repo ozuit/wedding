@@ -104,6 +104,27 @@ Version:        1.0.0
 }
 
 @font-face {
+    font-family: "Stylish Calligraphy";
+    src: url(../fonts/Stylish-Calligraphy.ttf) format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Boheme Floral";
+    src: url(../fonts/Boheme-Floral.ttf) format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Silenter";
+    src: url(../fonts/Silenter.ttf) format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
     font-family: "Muli";
     font-style: normal;
     font-weight: 500;
@@ -482,15 +503,22 @@ img {
     src: local('MeaCulpa Regular'), url('../fonts/MeaCulpa-Regular.ttf') format('truetype');
   }
 
+  @font-face {
+    font-family: 'NewWaltDisneyFontRegular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('NewWaltDisneyFontRegular'), url('../fonts/NewWaltDisneyFontRegular-BPen.ttf') format('truetype');
+  }
+
 .wpo-section-title h2,
 .wpo-section-title-s2 h2 {
-    font-size: 40px;
+    font-size: 38px;
     line-height: 55px;
     margin: 0;
     margin: 15px 0;
     position: relative;
-    text-transform: uppercase;
-    font-family: "Futura PT";
+    /* text-transform: capitalize; */
+    font-family: 'Silenter';
     font-weight: 500;
 }
 
@@ -498,7 +526,7 @@ img {
 
     .wpo-section-title h2,
     .wpo-section-title-s2 h2 {
-        font-size: 32px;
+        font-size: 40px;
         line-height: 40px;
     }
 }
@@ -507,7 +535,7 @@ img {
 
     .wpo-section-title h2,
     .wpo-section-title-s2 h2 {
-        font-size: 22px;
+        font-size: 40px;
     }
 }
 
@@ -4778,6 +4806,7 @@ img {
     color: #fff;
     margin-bottom: 8px;
     margin-top: -250px;
+    font-family: 'NewWaltDisneyFontRegular';
 }
 
 @media (max-width: 767px) {
@@ -8131,6 +8160,13 @@ div#elementor-lightbox-slideshow-single-img {
     }
 }
 
+@font-face {
+    font-family: 'PlayfairDisplay';
+    font-style: normal;
+    font-weight: normal;
+    src: local('PlayfairDisplay'), url('../fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+  }
+
 .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text h2 {
     font-size: 25px;
     text-transform: uppercase;
@@ -8138,6 +8174,7 @@ div#elementor-lightbox-slideshow-single-img {
     padding-bottom: 30px;
     margin-bottom: 40px;
     margin-top: 0;
+    font-family: 'PlayfairDisplay';
 }
 
 .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text ul {
