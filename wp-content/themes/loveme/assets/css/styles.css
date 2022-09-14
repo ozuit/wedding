@@ -125,6 +125,13 @@ Version:        1.0.0
 }
 
 @font-face {
+    font-family: "RougeScript Regular";
+    src: url(../fonts/RougeScript-Regular.ttf) format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
     font-family: "Muli";
     font-style: normal;
     font-weight: 500;
@@ -526,7 +533,7 @@ img {
 
     .wpo-section-title h2,
     .wpo-section-title-s2 h2 {
-        font-size: 40px;
+        font-size: 36px;
         line-height: 40px;
     }
 }
@@ -535,7 +542,7 @@ img {
 
     .wpo-section-title h2,
     .wpo-section-title-s2 h2 {
-        font-size: 40px;
+        font-size: 36px;
     }
 }
 
@@ -3424,6 +3431,7 @@ img {
 
 .wpo-header-style-3 #navbar>ul>li>a {
     color: #fff;
+    font-family: 'PlayfairDisplay';
 }
 
 .wpo-header-style-3 #navbar>ul>li>a:before {
@@ -4812,20 +4820,20 @@ img {
 @media (max-width: 767px) {
     .wpo-hero-style-3 .wedding-announcement .couple-text h2 {
         font-size: 50px;
-        margin-top: -200px;
+        margin-top: -245px;
     }
 }
 
 @media (max-width: 575px) {
     .wpo-hero-style-3 .wedding-announcement .couple-text h2 {
         font-size: 40px;
-        margin-top: -200px;
+        margin-top: -245px;
     }
 }
 
 .wpo-hero-style-3 .wedding-announcement .couple-text p {
     font-size: 30px;
-    font-family: "Futura PT";
+    font-family: "RougeScript Regular";
     color: #fff;
     font-weight: 500;
     margin-bottom: 10px;
@@ -4833,9 +4841,10 @@ img {
 
 @media (max-width: 767px) {
     .wpo-hero-style-3 .wedding-announcement .couple-text p {
-        font-size: 18px;
+        font-size: 26px;
         padding: 0 15px;
         line-height: 1.5em;
+        font-family: 'RougeScript Regular';
     }
 }
 
@@ -8171,7 +8180,7 @@ div#elementor-lightbox-slideshow-single-img {
   }
 
 .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text h2 {
-    font-size: 25px;
+    font-size: 23px;
     text-transform: uppercase;
     border-bottom: 1px solid #c4d8e4;
     padding-bottom: 30px;
