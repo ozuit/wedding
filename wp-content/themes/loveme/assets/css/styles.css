@@ -5280,14 +5280,14 @@ static-hero-s4
 @media (max-width: 991px) {
     .wpo-site-footer .wpo-upper-footer .col {
         min-height: 235px;
-        margin-bottom: 70px;
+        margin-bottom: 20px;
     }
 }
 
 @media (max-width: 767px) {
     .wpo-site-footer .wpo-upper-footer .col {
         min-height: auto;
-        margin-bottom: 60px;
+        margin-bottom: 20px;
     }
 }
 
@@ -5433,7 +5433,7 @@ static-hero-s4
 }
 
 .wpo-site-footer .link-widget ul li+li {
-    padding-top: 15px;
+    padding-top: 6px;
 }
 
 .wpo-site-footer .contact-ft {
@@ -5551,7 +5551,7 @@ div#elementor-lightbox-slideshow-single-img {
 .wpo-partners-section-s2 .container,
 .wpo-partners-section-s3 .container {
     position: relative;
-    padding: 60px 0px;
+    padding: 0px;
 }
 
 .wpo-partners-section .grid,
@@ -6583,7 +6583,7 @@ div#elementor-lightbox-slideshow-single-img {
 }
 @media (max-width: 767px) {
   .wpo-cta-section .wpo-cta-item p {
-    font-size: 35px;
+    font-size: 34px;
     margin-bottom: 30px;
   }
 }
