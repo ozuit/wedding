@@ -118,6 +118,13 @@ Version:        1.0.0
 }
 
 @font-face {
+    font-family: "PinyonScript-Regular";
+    src: url(../fonts/PinyonScript-Regular.ttf) format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
     font-family: "Muli";
     font-style: normal;
     font-weight: 500;
@@ -7532,8 +7539,9 @@ div#elementor-lightbox-slideshow-single-img {
 
 .couple-section .text-grid h3 {
     font-size: 22px;
-    font-size: 1.4666666667rem;
+    font-size: 2rem;
     margin: 0 0 0.8em;
+    font-family: 'PinyonScript-Regular';
 }
 
 .couple-section .text-grid .couple-img {
