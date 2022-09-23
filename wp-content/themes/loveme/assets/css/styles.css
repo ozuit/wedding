@@ -97,6 +97,13 @@ Version:        1.0.0
 ----------------------------*/
 
 @font-face {
+    font-family: "Carattere";
+    src: url(../fonts/text-font/Carattere-Regular.ttf) format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
     font-family: "Muli";
     src: url(../fonts/text-font/Muli.ttf) format("truetype");
     font-weight: 600;
@@ -4813,8 +4820,13 @@ img {
     font-weight: 500;
     color: #fff;
     margin-bottom: 8px;
-    margin-top: -250px;
     font-family: 'NewWaltDisneyFontRegular';
+}
+
+@media (max-width: 1440px) {
+    .wpo-hero-style-3 .wedding-announcement .couple-text h2 {
+        margin-top: -250px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -6594,14 +6606,15 @@ div#elementor-lightbox-slideshow-single-img {
   margin-top: -20px;
   position: relative;
   padding: 0 35px;
-  font-family: 'Waterfall Regular';
-    line-height: 42px;
+  font-family: 'Carattere';
+  line-height: 48px;
 }
 @media (max-width: 767px) {
   .wpo-cta-section .wpo-cta-item p {
-    font-size: 36px;
+    font-size: 28px;
     margin-bottom: 30px;
-    word-spacing: 2px;
+    word-spacing: 1.5px;
+    line-height: 30px;
   }
 }
 @media (max-width: 575px) {
