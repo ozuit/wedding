@@ -225,8 +225,8 @@ Version: 1.0
                 var weddingDate = $('#clock').data('date');
                 $('#clock').countdown(weddingDate, function (event) {
                     var $this = $(this).html(event.strftime(''
-                        + '<div class="box"><div><div class="time">%D</div> <span>Ngày</span></div></div>'
-                        // + '<div class="box"><div><div class="time">%H</div> <span>Giờ</span></div></div>'
+                        // + '<div class="box"><div><div class="time">%D</div> <span>Ngày</span></div></div>'
+                        + '<div class="box"><div><div class="time">%H</div> <span>Giờ</span></div></div>'
                         + '<div class="box"><div><div class="time">%M</div> <span>Phút</span> </div></div>'
                         + '<div class="box"><div><div class="time">%S</div> <span>Giây</span> </div></div>'));
                 });
