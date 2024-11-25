@@ -424,7 +424,7 @@
 
         sortingGallery();
 
-        $('#album').attr('src', 'https://www.ozuit.blog/album/')
+        $('#album').attr('src', 'https://ozuit.github.io/album/')
     });
 
 
